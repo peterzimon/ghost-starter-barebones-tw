@@ -1,35 +1,3 @@
 {{!< default}}
 
-<div class="gh-page px-[4vmin]">
-    <div class="gh-container w-full max-w-[1200px] mx-auto">
-
-        {{#tag}}
-        <header class="gh-page-head mx-auto pt-[8vmin] pb-[4vmin]">
-
-            <h1>{{name}}</h1>
-
-            <p class="max-w-[720px] mt-[0.3em] mx-auto px-[6vmin] text-sm opacity-50 text-center">{{bio}}</p>
-                {{#if description}}
-                    {{description}}
-                {{else}}
-                    A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
-                {{/if}}
-            </p>
-
-            {{#if feature_image}}
-                <img class="gh-page-image mt-[4vmin]" src="{{feature_image}}" alt="{{name}}" />
-            {{/if}}
-
-        </header>
-        {{/tag}}
-
-        <div class="gh-postfeed grid grid-cols-feed gap-y-[4.8vmin] gap-x-[4vmin] py-[8vmin]">
-        {{#foreach posts}}
-
-            {{> "card"}} {{!-- partials/card.hbs --}}
-
-        {{/foreach}}
-        </div>
-
-    </div>
-</div>
+tag.hbs

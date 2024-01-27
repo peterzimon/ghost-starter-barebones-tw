@@ -13,22 +13,10 @@
     {{!-- Outputs important meta data and settings, should always be in <head> --}}
 
 </head>
-<body class="{{body_class}} group">
-
-<div class="flex flex-col min-h-[100vh] bg-white">
-
-{{> "head"}}
-
-<main class="gh-main flex flex-grow flex-col">
+<body class="{{body_class}}">
 
     {{{body}}}
     {{!-- All content gets inserted here, index.hbs, post.hbs, etc --}}
-
-</main>
-
-{{> "foot"}}
-
-</div>
 
 {{!-- <foot> --}}
 {{ghost_foot}}

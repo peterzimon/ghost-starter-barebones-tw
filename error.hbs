@@ -14,50 +14,9 @@
 
 </head>
 
-<body class="{{body_class}} group">
-<div class="flex flex-col min-h-[100vh] bg-white">
+<body class="{{body_class}}">
 
-{{> "head"}}
-
-<main class="gh-main flex flex-grow flex-col">
-
-    <section class="gh-page gh-error flex flex-col justify-center flex-grow px-[4vmin]">
-        <div class="gh-container w-full max-w-[1200px] mx-auto">
-
-            <section class="gh-error-content flex-grow text-center">
-
-                <h1 class="gh-error-code m-0 text-[14vmin]">{{statusCode}}</h1>
-                <p class="gh-error-description max-w-[600px] mx-auto px-0.5 text-[4vmin] leading-tighter font-light opacity-60">{{message}}</p>
-                <p class="gh-error-link mt-[4vmin] text-lg"><a href="{{@site.url}}">Go to the front page →</a></p>
-
-                {{#if errorDetails}}
-                <section class="gh-error-stack max-w-[600px] mx-auto py-[8vmin] text-left">
-                    <h4>Theme errors:</h4>
-                    <ul class="gh-error-stack-list mt-[4vmin] text-base">
-                        {{#foreach errorDetails}}
-                        <li class="py-0.5 m-0 border-t border-[rgba(0,0,0,0.1)]">
-                            <h5 class="gh-error-stack-function mb-[0.5em] text-lg text-red-600">{{{rule}}}</h5>
-
-                            {{#foreach failures}}
-                            <span class="gh-error-stack-file"><strong>Ref:</strong> {{ref}}</span><br>
-                            <span class="gh-error-stack-file"><strong>Message:</strong> {{message}}</span>
-                            {{/foreach}}
-                        </li>
-                        {{/foreach}}
-                    </ul>
-                </section>
-                {{/if}}
-
-            </section>
-
-        </div>
-    </section>
-
-</main>
-
-{{> "foot"}}
-
-</div>
+error.hbs
 
 {{!-- <foot> --}}
 {{ghost_foot}}

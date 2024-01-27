@@ -10,17 +10,6 @@ export default {
           xl: '1320px',
           tablet: '860px'
         },
-        // Update variables in assets/css/base/globals.css
-        gridTemplateColumns: {
-          'canvas': `
-            [full-start] var(--full)
-            [wide-start] var(--wide)
-            [main-start] var(--main) [main-end]
-            var(--wide) [wide-end]
-            var(--full) [full-end]
-          `,
-          'feed': 'repeat(auto-fit, minmax(min(350px, 100%), 1fr))'
-        },
         spacing: {
           px: '1px',
           0: '0px',

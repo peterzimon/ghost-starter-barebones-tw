@@ -1,6 +1,6 @@
 {
-    "name": "ghost-starter-theme-tw",
-    "description": "A starter theme for Ghost theme development with TailwindCSS",
+    "name": "ghost-starter-barebones-tw",
+    "description": "An absolute barebones starter theme for Ghost theme & site development with TailwindCSS",
     "demo": "https://starter.ghost.io",
     "version": "1.0.0",
     "engines": {

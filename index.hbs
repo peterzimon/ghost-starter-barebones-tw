@@ -1,20 +1,3 @@
 {{!< default}}
-<div class="gh-page px-[4vmin]">
-    <div class="gh-container w-full max-w-[1200px] mx-auto">
 
-        <div class="gh-postfeed grid grid-cols-feed gap-y-[16vmin] md:gap-y-[6vmin] gap-x-[4vmin] pb-[8vmin]">
-        {{#foreach posts}}
-
-            {{> "card" page=../pagination.page }} {{!-- partials/card.hbs --}}
-
-        {{/foreach}}
-        </div>
-
-        {{!-- If JS isn't enabled, fallback to standard pagination --}}
-        <noscript>
-            <div class="gh-pagination flex justify-between m-[4vmin]">
-                {{pagination}}
-            </div>
-        </noscript>
-    </div>
-</div>
+index.hbs
