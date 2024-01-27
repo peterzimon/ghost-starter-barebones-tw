@@ -1,8 +1,6 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
-/* ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com */
+/*
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -587,6 +585,10 @@ video {
 
 .ml-10 {
   margin-left: 4rem;
+}
+
+.mt-10 {
+  margin-top: 4rem;
 }
 
 .block {
