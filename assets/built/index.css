@@ -544,11 +544,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-:root {
-  /* Colours */
-  --color-primary: var(--ghost-accent-color, #3eb0ef);
-}
-
 .relative {
   position: relative;
 }
@@ -585,10 +580,6 @@ video {
 
 .ml-10 {
   margin-left: 4rem;
-}
-
-.mt-10 {
-  margin-top: 4rem;
 }
 
 .block {
@@ -828,6 +819,18 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+/* Ghost variables and mandatory styles */
+
+:root {
+  --color-primary: var(--ghost-accent-color, #3eb0ef);
+}
+
+.kg-width-wide {
+}
+
+.kg-width-full {
 }
 
 .before\:absolute::before {
